@@ -17,6 +17,12 @@ public class Monster extends Character {
 		this.magicResist=magicResist;
 		this.skillList=skillList;
 		}
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	
