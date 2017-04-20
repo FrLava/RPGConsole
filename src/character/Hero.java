@@ -39,24 +39,36 @@ public class Hero extends Character {
 		System.out.print(this.getMagicResist());
 		System.out.println(" de resistance magique.");
 	}
+	public void displayWeapon(){
+		System.out.println(this.getName()+" a l'arme "+this.getW().getNom());
+	}
+	
+	public void displayArmor(){
+		System.out.println(this.getName()+" a l'armure "+this.getA());
+	}
+	
+	public void displayStuff(){
+		this.displayWeapon();
+		this.displayArmor();
+	}
 
-	protected Weapon getW() {
+	public Weapon getW() {
 		return w;
 	}
 
-	protected void setW(Weapon lootedWeapon) {
+	public void setW(Weapon lootedWeapon) {
 		this.w = lootedWeapon;
 	}
 
-	protected Armor getA() {
+	public Armor getA() {
 		return a;
 	}
 
-	protected void setA(Armor lootedArmor) {
+	public void setA(Armor lootedArmor) {
 		this.a = lootedArmor;
 	}
 
-	protected String getClassName() {
+	public String getClassName() {
 		return className;
 	}
 	
